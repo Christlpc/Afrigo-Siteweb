@@ -79,26 +79,26 @@ export default function ChauffeursPage() {
   if (isSubmitted) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-primary via-primary-700 to-primary-900 flex items-center justify-center p-4">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="bg-white rounded-3xl p-8 md:p-12 max-w-md w-full text-center shadow-premium-lg border border-gray-100"
+        >
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="bg-white rounded-3xl p-8 md:p-12 max-w-md w-full text-center shadow-premium-lg border border-gray-100"
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ delay: 0.2, type: "spring" }}
+            className="w-20 h-20 bg-gradient-to-br from-accent to-accent-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-glow animate-pulse-glow"
           >
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.2, type: "spring" }}
-              className="w-20 h-20 bg-gradient-to-br from-accent to-accent-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-glow animate-pulse-glow"
-            >
-              <CheckCircle className="w-12 h-12 text-white" />
-            </motion.div>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-shadow-premium">
-              Pré-inscription réussie !
-            </h2>
-            <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-              Merci pour votre intérêt ! Nous vous contacterons très bientôt pour 
-              finaliser votre inscription en tant que chauffeur Afrigo.
-            </p>
+            <CheckCircle className="w-12 h-12 text-white" />
+          </motion.div>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-shadow-premium">
+            Pré-inscription réussie !
+          </h2>
+          <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+            Merci pour votre intérêt ! Nous vous contacterons très bientôt pour 
+            finaliser votre inscription en tant que chauffeur Afrigo.
+          </p>
           <Link href="/">
             <Button 
               variant="accent" 
