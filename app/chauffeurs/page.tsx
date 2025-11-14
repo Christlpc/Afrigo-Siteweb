@@ -324,7 +324,7 @@ export default function ChauffeursPage() {
                   </form>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
