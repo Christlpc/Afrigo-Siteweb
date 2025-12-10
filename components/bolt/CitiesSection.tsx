@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react"
 
 export function CitiesSection() {
     return (
-        <section className="section-bolt section-bolt-dark">
+        <section className="section-afrigo section-afrigo-dark">
             <div className="container mx-auto px-4">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Image */}
@@ -33,7 +33,7 @@ export function CitiesSection() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="text-white"
                     >
-                        <h2 className="heading-bolt-lg mb-6">
+                        <h2 className="heading-afrigo-lg mb-6">
                             Des villes pour les habitants, pas pour les voitures.
                         </h2>
 
@@ -49,13 +49,13 @@ export function CitiesSection() {
                                 "Solutions pour entreprises",
                             ].map((item, index) => (
                                 <div key={index} className="flex items-center gap-3">
-                                    <div className="w-2 h-2 bg-bolt-green rounded-full" />
+                                    <div className="w-2 h-2 bg-afrigo-accent rounded-full" />
                                     <span className="text-lg">{item}</span>
                                 </div>
                             ))}
                         </div>
 
-                        <button className="inline-flex items-center gap-2 text-bolt-green font-semibold hover:gap-4 transition-all">
+                        <button className="inline-flex items-center gap-2 text-afrigo-accent-light font-semibold hover:gap-4 transition-all">
                             Notre mission
                             <ArrowRight className="w-5 h-5" />
                         </button>

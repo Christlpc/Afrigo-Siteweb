@@ -38,7 +38,7 @@ export function BoltNavbar() {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className="text-gray-700 hover:text-bolt-green font-medium transition-colors"
+                                className="text-gray-700 hover:text-afrigo-accent font-medium transition-colors"
                             >
                                 {link.name}
                             </Link>
@@ -47,10 +47,10 @@ export function BoltNavbar() {
 
                     {/* Desktop CTA */}
                     <div className="hidden md:flex items-center gap-4">
-                        <Button variant="ghost" className="text-gray-700 hover:text-bolt-green">
+                        <Button variant="ghost" className="text-gray-700 hover:text-afrigo-accent">
                             Connexion
                         </Button>
-                        <Button className="btn-bolt btn-bolt-primary rounded-full">
+                        <Button className="bg-afrigo-primary hover:bg-afrigo-primary-dark text-white rounded-full">
                             Télécharger l&apos;appli
                         </Button>
                     </div>
@@ -69,13 +69,13 @@ export function BoltNavbar() {
                                         key={link.name}
                                         href={link.href}
                                         onClick={() => setIsOpen(false)}
-                                        className="text-xl font-medium text-gray-900 hover:text-bolt-green transition-colors"
+                                        className="text-xl font-medium text-gray-900 hover:text-afrigo-accent transition-colors"
                                     >
                                         {link.name}
                                     </Link>
                                 ))}
                                 <hr className="my-4" />
-                                <Button className="btn-bolt btn-bolt-primary w-full">
+                                <Button className="bg-afrigo-primary hover:bg-afrigo-primary-dark text-white w-full">
                                     Télécharger l&apos;appli
                                 </Button>
                             </div>

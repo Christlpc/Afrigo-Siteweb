@@ -12,7 +12,7 @@ const stats = [
 
 export function SuperAppSection() {
     return (
-        <section className="section-bolt bg-white">
+        <section className="section-afrigo bg-white">
             <div className="container mx-auto px-4">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Content */}
@@ -22,15 +22,15 @@ export function SuperAppSection() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <span className="inline-block px-4 py-2 bg-bolt-green/10 text-bolt-green rounded-full text-sm font-semibold mb-6">
+                        <span className="inline-block px-4 py-2 bg-afrigo-accent/10 text-afrigo-accent rounded-full text-sm font-semibold mb-6">
                             Première au Congo
                         </span>
 
-                        <h2 className="heading-bolt-lg text-bolt-dark mb-6">
+                        <h2 className="heading-afrigo-lg text-afrigo-primary mb-6">
                             Afrigo est la première application VTC au Congo.
                         </h2>
 
-                        <p className="text-bolt-body mb-8">
+                        <p className="text-afrigo-body mb-8">
                             Nous révolutionnons le transport au Congo en offrant de meilleures
                             alternatives pour tous vos déplacements : transport avec chauffeur,
                             livraison de repas et solutions entreprises.
@@ -47,7 +47,7 @@ export function SuperAppSection() {
                                     transition={{ duration: 0.5, delay: index * 0.1 }}
                                     className="text-center"
                                 >
-                                    <div className="text-4xl font-bold text-bolt-green mb-1">
+                                    <div className="text-4xl font-bold text-afrigo-accent mb-1">
                                         {stat.value}
                                     </div>
                                     <div className="text-sm text-gray-600">{stat.label}</div>
@@ -55,7 +55,7 @@ export function SuperAppSection() {
                             ))}
                         </div>
 
-                        <button className="inline-flex items-center gap-2 text-bolt-dark font-semibold hover:gap-4 transition-all border-b-2 border-bolt-dark pb-1">
+                        <button className="inline-flex items-center gap-2 text-afrigo-primary font-semibold hover:gap-4 transition-all border-b-2 border-afrigo-primary pb-1">
                             Notre mission
                             <ArrowRight className="w-5 h-5" />
                         </button>
@@ -69,7 +69,7 @@ export function SuperAppSection() {
                         transition={{ duration: 0.8 }}
                         className="relative h-[500px] md:h-[600px]"
                     >
-                        <div className="absolute inset-0 bg-gradient-to-br from-bolt-green/20 to-transparent rounded-3xl blur-3xl" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-afrigo-accent/20 to-transparent rounded-3xl blur-3xl" />
                         <Image
                             src="/images/afrigo_phone_mockup_1765388380102.png"
                             alt="Application Afrigo"

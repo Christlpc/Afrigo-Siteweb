@@ -12,7 +12,7 @@ const earnOptions = [
         description: "Inscrivez-vous en tant que chauffeur et commencez à gagner de l'argent dès aujourd'hui.",
         image: "/images/afrigo_driver_happy_1765388354916.png",
         link: "/chauffeurs",
-        color: "bg-bolt-green",
+        color: "bg-afrigo-accent",
     },
     {
         icon: Bike,
@@ -36,13 +36,13 @@ const earnOptions = [
         description: "Développez votre activité de transport avec nos outils de gestion de flotte.",
         image: "/images/afrigo_phone_mockup_1765388380102.png",
         link: "#",
-        color: "bg-blue-500",
+        color: "bg-afrigo-primary",
     },
 ]
 
 export function EarnSection() {
     return (
-        <section className="section-bolt bg-bolt-gray">
+        <section className="section-afrigo section-afrigo-gray">
             <div className="container mx-auto px-4">
                 {/* Header */}
                 <motion.div
@@ -51,10 +51,10 @@ export function EarnSection() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="heading-bolt-lg text-bolt-dark mb-4">
+                    <h2 className="heading-afrigo-lg text-afrigo-primary mb-4">
                         Générez des revenus avec Afrigo
                     </h2>
-                    <p className="text-bolt-body max-w-2xl mx-auto">
+                    <p className="text-afrigo-body max-w-2xl mx-auto">
                         Rejoignez une communauté de partenaires qui génèrent des revenus avec Afrigo.
                         Pour les chauffeurs, les livreurs, les commerçants et les gestionnaires de flotte.
                     </p>
@@ -71,7 +71,7 @@ export function EarnSection() {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
                             <Link href={option.link} className="block group">
-                                <div className="card-bolt h-full">
+                                <div className="card-afrigo h-full">
                                     {/* Image */}
                                     <div className="relative h-48 overflow-hidden">
                                         <Image
@@ -87,13 +87,13 @@ export function EarnSection() {
 
                                     {/* Content */}
                                     <div className="p-6">
-                                        <h3 className="text-lg font-bold text-bolt-dark mb-2 group-hover:text-bolt-green transition-colors">
+                                        <h3 className="text-lg font-bold text-afrigo-primary mb-2 group-hover:text-afrigo-accent transition-colors">
                                             {option.title}
                                         </h3>
                                         <p className="text-gray-600 text-sm mb-4">
                                             {option.description}
                                         </p>
-                                        <div className="flex items-center gap-2 text-bolt-green font-medium text-sm group-hover:gap-3 transition-all">
+                                        <div className="flex items-center gap-2 text-afrigo-accent font-medium text-sm group-hover:gap-3 transition-all">
                                             En savoir plus
                                             <ArrowRight className="w-4 h-4" />
                                         </div>

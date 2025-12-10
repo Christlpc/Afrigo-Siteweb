@@ -8,7 +8,7 @@ import Link from "next/link"
 
 export function BoltHero() {
     return (
-        <section className="relative min-h-screen bg-bolt-green pt-20 overflow-hidden">
+        <section className="relative min-h-screen bg-afrigo-primary pt-20 overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10">
                 <div className="absolute inset-0" style={{
@@ -26,7 +26,7 @@ export function BoltHero() {
                         transition={{ duration: 0.8 }}
                         className="text-white"
                     >
-                        <h1 className="heading-bolt-xl mb-6">
+                        <h1 className="heading-afrigo-xl mb-6">
                             Afrigo, votre nouvelle façon de vous déplacer
                         </h1>
 
@@ -37,7 +37,7 @@ export function BoltHero() {
 
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link href="/chauffeurs">
-                                <Button className="bg-bolt-dark text-white hover:bg-gray-800 rounded-full px-8 py-6 text-lg font-semibold">
+                                <Button className="bg-afrigo-accent text-white hover:bg-afrigo-accent-dark rounded-full px-8 py-6 text-lg font-semibold">
                                     Générez des revenus avec Afrigo
                                     <ArrowRight className="ml-2 h-5 w-5" />
                                 </Button>
@@ -46,7 +46,7 @@ export function BoltHero() {
 
                         {/* Store Buttons */}
                         <div className="flex flex-wrap gap-4 mt-8">
-                            <button className="bg-black/20 hover:bg-black/30 backdrop-blur-sm rounded-xl px-6 py-3 flex items-center gap-3 transition-colors">
+                            <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-xl px-6 py-3 flex items-center gap-3 transition-colors border border-white/20">
                                 <svg className="w-8 h-8" viewBox="0 0 24 24" fill="white">
                                     <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
                                 </svg>
@@ -56,7 +56,7 @@ export function BoltHero() {
                                 </div>
                             </button>
 
-                            <button className="bg-black/20 hover:bg-black/30 backdrop-blur-sm rounded-xl px-6 py-3 flex items-center gap-3 transition-colors">
+                            <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-xl px-6 py-3 flex items-center gap-3 transition-colors border border-white/20">
                                 <svg className="w-8 h-8" viewBox="0 0 24 24" fill="white">
                                     <path d="M3 20.5v-17c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v17c0 .83-.67 1.5-1.5 1.5S3 21.33 3 20.5zm4.5-17v17l9-8.5-9-8.5zm11 8.5l-5.5-5v10l5.5-5z" />
                                 </svg>

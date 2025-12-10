@@ -1,46 +1,55 @@
 @import "tailwindcss";
 
-/* BOLT Design System - Afrigo */
+/* AFRIGO Design System - Style Bolt */
 @theme {
-  /* Bolt Colors */
-  --color-bolt-green: #34D186;
-  --color-bolt-green-dark: #2BB574;
-  --color-bolt-green-light: #4FE09A;
-  --color-bolt-dark: #1A1A1A;
-  --color-bolt-gray: #F5F5F5;
-  --color-bolt-gray-dark: #8A8A8A;
-  --color-bolt-white: #FFFFFF;
+  /* Afrigo Brand Colors */
+  --color-afrigo-primary: #1a3a52;
+  --color-afrigo-primary-light: #6797bb;
+  --color-afrigo-primary-dark: #102332;
+  --color-afrigo-accent: #2d7a3a;
+  --color-afrigo-accent-light: #67c377;
+  --color-afrigo-accent-dark: #1b4923;
+  --color-afrigo-dark: #0b1721;
+  --color-afrigo-gray: #F5F5F5;
+  --color-afrigo-white: #FFFFFF;
 
-  /* Afrigo Adapted Colors */
-  --color-primary: #34D186;
-  --color-primary-50: #E8FBF2;
-  --color-primary-100: #C5F5E0;
-  --color-primary-200: #8EEBC1;
-  --color-primary-300: #5CE0A3;
-  --color-primary-400: #34D186;
-  --color-primary-500: #2BB574;
-  --color-primary-600: #229962;
-  --color-primary-700: #1A7D50;
-  --color-primary-800: #12613E;
-  --color-primary-900: #0A452C;
+  /* Design System Tokens */
+  --color-primary: #1a3a52;
+  --color-primary-50: #f0f4f8;
+  --color-primary-100: #d9e6f0;
+  --color-primary-200: #b3cbdd;
+  --color-primary-300: #8db1cc;
+  --color-primary-400: #6797bb;
+  --color-primary-500: #1a3a52;
+  --color-primary-600: #152e42;
+  --color-primary-700: #102332;
+  --color-primary-800: #0b1721;
+  --color-primary-900: #060c11;
 
-  --color-accent: #34D186;
-  --color-accent-400: #4FE09A;
-  --color-accent-500: #34D186;
-  --color-accent-600: #2BB574;
+  --color-accent: #2d7a3a;
+  --color-accent-50: #f0f9f2;
+  --color-accent-100: #d4eeda;
+  --color-accent-200: #a9ddb5;
+  --color-accent-300: #7ecc90;
+  --color-accent-400: #67c377;
+  --color-accent-500: #2d7a3a;
+  --color-accent-600: #24622e;
+  --color-accent-700: #1b4923;
+  --color-accent-800: #123117;
+  --color-accent-900: #09180c;
 
   /* Semantic Colors */
   --color-background: #FFFFFF;
-  --color-foreground: #1A1A1A;
+  --color-foreground: #1a3a52;
   --color-border: #E5E5E5;
   --color-input: #E5E5E5;
-  --color-ring: #34D186;
+  --color-ring: #2d7a3a;
 
   --color-card: #FFFFFF;
-  --color-card-foreground: #1A1A1A;
+  --color-card-foreground: #1a3a52;
 
   --color-muted: #F5F5F5;
-  --color-muted-foreground: #8A8A8A;
+  --color-muted-foreground: #64748b;
 
   --color-destructive: #EF4444;
   --color-destructive-foreground: #FFFFFF;
@@ -53,8 +62,8 @@
   --radius-2xl: 2rem;
   --radius-full: 9999px;
 
-  /* Fonts - Bolt style */
-  --font-sans: 'Inter', system-ui, sans-serif;
+  /* Fonts */
+  --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
 
   /* Animations */
   --animate-fade-in: fade-in 0.5s ease-out;
@@ -117,63 +126,67 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Bolt Button Styles */
-.btn-bolt {
+/* Afrigo Button Styles */
+.btn-afrigo {
   @apply inline-flex items-center justify-center px-6 py-3 font-semibold rounded-full transition-all duration-200;
 }
 
-.btn-bolt-primary {
-  @apply bg-bolt-dark text-white hover:bg-gray-800;
+.btn-afrigo-primary {
+  @apply bg-afrigo-primary text-white hover:bg-afrigo-primary-dark;
 }
 
-.btn-bolt-secondary {
-  @apply bg-white text-bolt-dark border border-gray-200 hover:bg-gray-50;
+.btn-afrigo-secondary {
+  @apply bg-white text-afrigo-primary border border-gray-200 hover:bg-gray-50;
 }
 
-.btn-bolt-green {
-  @apply bg-bolt-green text-white hover:bg-bolt-green-dark;
+.btn-afrigo-accent {
+  @apply bg-afrigo-accent text-white hover:bg-afrigo-accent-dark;
 }
 
-/* Bolt Card Styles */
-.card-bolt {
+/* Afrigo Card Styles */
+.card-afrigo {
   @apply bg-white rounded-2xl overflow-hidden transition-all duration-300;
 }
 
-.card-bolt:hover {
+.card-afrigo:hover {
   @apply shadow-xl;
 }
 
-/* Bolt Section Styles */
-.section-bolt {
+/* Afrigo Section Styles */
+.section-afrigo {
   @apply py-16 md:py-24;
 }
 
-.section-bolt-dark {
-  @apply bg-bolt-dark text-white;
+.section-afrigo-dark {
+  @apply bg-afrigo-dark text-white;
 }
 
-.section-bolt-green {
-  @apply bg-bolt-green text-white;
+.section-afrigo-primary {
+  @apply bg-afrigo-primary text-white;
 }
 
-.section-bolt-gray {
-  @apply bg-bolt-gray;
+.section-afrigo-accent {
+  @apply bg-afrigo-accent text-white;
 }
 
-/* Bolt Typography */
-.heading-bolt-xl {
+.section-afrigo-gray {
+  @apply bg-afrigo-gray;
+}
+
+/* Afrigo Typography */
+.heading-afrigo-xl {
   @apply text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight;
 }
 
-.heading-bolt-lg {
+.heading-afrigo-lg {
   @apply text-4xl md:text-5xl font-bold leading-tight;
 }
 
-.heading-bolt-md {
+.heading-afrigo-md {
   @apply text-3xl md:text-4xl font-bold;
 }
 
-.text-bolt-body {
+.text-afrigo-body {
   @apply text-lg md:text-xl text-gray-600 leading-relaxed;
 }
 
@@ -187,16 +200,16 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #34D186;
+  background: #2d7a3a;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2BB574;
+  background: #1b4923;
 }
 
 /* Selection */
 ::selection {
-  background-color: rgba(52, 209, 134, 0.3);
-  color: #1A1A1A;
+  background-color: rgba(45, 122, 58, 0.3);
+  color: #1a3a52;
 }

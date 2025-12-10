@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react"
+import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
 
 const footerLinks = {
     services: {
@@ -48,7 +48,7 @@ const socialLinks = [
 
 export function BoltFooter() {
     return (
-        <footer className="bg-bolt-dark text-white py-16">
+        <footer className="bg-afrigo-dark text-white py-16">
             <div className="container mx-auto px-4">
                 {/* Top Section */}
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
@@ -77,7 +77,7 @@ export function BoltFooter() {
                                     <li key={link.name}>
                                         <Link
                                             href={link.href}
-                                            className="text-gray-400 hover:text-bolt-green transition-colors text-sm"
+                                            className="text-gray-400 hover:text-afrigo-accent transition-colors text-sm"
                                         >
                                             {link.name}
                                         </Link>
@@ -118,7 +118,7 @@ export function BoltFooter() {
                                 key={social.label}
                                 href={social.href}
                                 aria-label={social.label}
-                                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-bolt-green transition-colors"
+                                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-afrigo-accent transition-colors"
                             >
                                 <social.icon className="w-5 h-5" />
                             </Link>

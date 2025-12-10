@@ -13,7 +13,7 @@ const services = [
         title: "Des trajets fiables à petit prix",
         description: "Commandez un trajet en quelques secondes et arrivez à destination en toute sérénité. Des chauffeurs vérifiés, des véhicules propres et confortables.",
         image: "/images/afrigo_lifestyle_city_1765388339654.png",
-        color: "bg-bolt-green",
+        color: "bg-afrigo-accent",
     },
     {
         id: "livraison",
@@ -40,7 +40,7 @@ const services = [
         title: "Solutions pour entreprises",
         description: "Gérez les déplacements professionnels de votre équipe avec des outils de reporting et de facturation centralisée.",
         image: "/images/afrigo_driver_happy_1765388354916.png",
-        color: "bg-blue-500",
+        color: "bg-afrigo-primary",
     },
 ]
 
@@ -48,7 +48,7 @@ export function ServicesSection() {
     const [activeService, setActiveService] = useState(services[0])
 
     return (
-        <section id="services" className="section-bolt bg-white">
+        <section id="services" className="section-afrigo bg-white">
             <div className="container mx-auto px-4">
                 {/* Header */}
                 <motion.div
@@ -57,8 +57,8 @@ export function ServicesSection() {
                     viewport={{ once: true }}
                     className="text-center mb-12"
                 >
-                    <h2 className="heading-bolt-lg text-bolt-dark mb-4">Nos services</h2>
-                    <p className="text-bolt-body max-w-2xl mx-auto">
+                    <h2 className="heading-afrigo-lg text-afrigo-primary mb-4">Nos services</h2>
+                    <p className="text-afrigo-body max-w-2xl mx-auto">
                         Les produits et fonctionnalités varient selon les villes.
                         Certains services peuvent ne pas être disponibles dans votre zone.
                     </p>
@@ -71,8 +71,8 @@ export function ServicesSection() {
                             key={service.id}
                             onClick={() => setActiveService(service)}
                             className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all duration-300 ${activeService.id === service.id
-                                    ? "bg-bolt-dark text-white"
-                                    : "bg-bolt-gray text-bolt-dark hover:bg-gray-200"
+                                    ? "bg-afrigo-primary text-white"
+                                    : "bg-afrigo-gray text-afrigo-primary hover:bg-gray-200"
                                 }`}
                         >
                             <service.icon className="w-5 h-5" />
@@ -97,13 +97,13 @@ export function ServicesSection() {
                                 <activeService.icon className="w-4 h-4" />
                                 {activeService.name}
                             </div>
-                            <h3 className="heading-bolt-md text-bolt-dark mb-4">
+                            <h3 className="heading-afrigo-md text-afrigo-primary mb-4">
                                 {activeService.title}
                             </h3>
-                            <p className="text-bolt-body mb-6">
+                            <p className="text-afrigo-body mb-6">
                                 {activeService.description}
                             </p>
-                            <button className="btn-bolt btn-bolt-primary">
+                            <button className="btn-afrigo btn-afrigo-primary">
                                 En savoir plus
                             </button>
                         </div>
