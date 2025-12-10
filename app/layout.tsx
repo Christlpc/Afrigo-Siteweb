@@ -2,8 +2,10 @@ import type { Metadata } from "next"
 import { Inter, Plus_Jakarta_Sans } from "next/font/google"
 import "./globals.css"
 import AOSInit from "@/components/AOSInit"
+import { Toaster } from "@/components/ui/sonner"
+import { MuiThemeProvider } from "@/components/mui/theme-provider"
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
@@ -34,8 +36,11 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${inter.variable} ${plusJakarta.variable}`}>
       <body className={`${inter.className} antialiased`}>
-        <AOSInit />
-        {children}
+        <MuiThemeProvider>
+          <AOSInit />
+          {children}
+          <Toaster position="top-right" richColors />
+        </MuiThemeProvider>
       </body>
     </html>
   )
