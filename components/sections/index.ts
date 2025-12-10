@@ -1,0 +1,5 @@
+export { NewWaySection } from "./NewWaySection"
+export { PricingSection } from "./PricingSection"
+export { FirstAppSection } from "./FirstAppSection"
+export { DriverEarningsSection } from "./DriverEarningsSection"
+export { AppDownloadSection } from "./AppDownloadSection"
