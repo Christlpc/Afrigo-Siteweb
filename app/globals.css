@@ -1,98 +1,97 @@
 @import "tailwindcss";
 
-/* Design Tokens Afrigo - Tailwind CSS v4 */
+/* BOLT Design System - Afrigo */
 @theme {
-  /* Primary Colors - Bleu profond */
-  --color-primary-50: #f0f4f8;
-  --color-primary-100: #d9e5ee;
-  --color-primary-200: #b3cbdd;
-  --color-primary-300: #8db1cc;
-  --color-primary-400: #6797bb;
-  --color-primary-500: #1a3a52;
-  --color-primary-600: #152e42;
-  --color-primary-700: #102332;
-  --color-primary-800: #0b1721;
-  --color-primary-900: #050b11;
-  --color-primary: #1a3a52;
-  
-  /* Accent Colors - Vert africain */
-  --color-accent-50: #f0f9f2;
-  --color-accent-100: #d9f0dd;
-  --color-accent-200: #b3e1bb;
-  --color-accent-300: #8dd299;
-  --color-accent-400: #67c377;
-  --color-accent-500: #2d7a3a;
-  --color-accent-600: #24622e;
-  --color-accent-700: #1b4923;
-  --color-accent-800: #123117;
-  --color-accent-900: #09180c;
-  --color-accent: #2d7a3a;
-  
+  /* Bolt Colors */
+  --color-bolt-green: #34D186;
+  --color-bolt-green-dark: #2BB574;
+  --color-bolt-green-light: #4FE09A;
+  --color-bolt-dark: #1A1A1A;
+  --color-bolt-gray: #F5F5F5;
+  --color-bolt-gray-dark: #8A8A8A;
+  --color-bolt-white: #FFFFFF;
+
+  /* Afrigo Adapted Colors */
+  --color-primary: #34D186;
+  --color-primary-50: #E8FBF2;
+  --color-primary-100: #C5F5E0;
+  --color-primary-200: #8EEBC1;
+  --color-primary-300: #5CE0A3;
+  --color-primary-400: #34D186;
+  --color-primary-500: #2BB574;
+  --color-primary-600: #229962;
+  --color-primary-700: #1A7D50;
+  --color-primary-800: #12613E;
+  --color-primary-900: #0A452C;
+
+  --color-accent: #34D186;
+  --color-accent-400: #4FE09A;
+  --color-accent-500: #34D186;
+  --color-accent-600: #2BB574;
+
   /* Semantic Colors */
-  --color-background: hsl(0 0% 100%);
-  --color-foreground: hsl(210 40% 16%);
-  --color-border: hsl(214.3 31.8% 91.4%);
-  --color-input: hsl(214.3 31.8% 91.4%);
-  --color-ring: hsl(210 40% 16%);
-  
-  --color-card: hsl(0 0% 100%);
-  --color-card-foreground: hsl(210 40% 16%);
-  
-  --color-popover: hsl(0 0% 100%);
-  --color-popover-foreground: hsl(210 40% 16%);
-  
-  --color-secondary: hsl(210 40% 96.1%);
-  --color-secondary-foreground: hsl(210 40% 16%);
-  
-  --color-muted: hsl(210 40% 96.1%);
-  --color-muted-foreground: hsl(215.4 16.3% 46.9%);
-  
-  --color-destructive: hsl(0 84.2% 60.2%);
-  --color-destructive-foreground: hsl(210 40% 98%);
-  
+  --color-background: #FFFFFF;
+  --color-foreground: #1A1A1A;
+  --color-border: #E5E5E5;
+  --color-input: #E5E5E5;
+  --color-ring: #34D186;
+
+  --color-card: #FFFFFF;
+  --color-card-foreground: #1A1A1A;
+
+  --color-muted: #F5F5F5;
+  --color-muted-foreground: #8A8A8A;
+
+  --color-destructive: #EF4444;
+  --color-destructive-foreground: #FFFFFF;
+
   /* Border Radius */
   --radius-sm: 0.5rem;
-  --radius-md: 0.625rem;
-  --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
-  
-  /* Fonts */
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+
+  /* Fonts - Bolt style */
   --font-sans: 'Inter', system-ui, sans-serif;
-  --font-jakarta: 'Plus Jakarta Sans', system-ui, sans-serif;
-  
+
   /* Animations */
-  --animate-accordion-down: accordion-down 0.2s ease-out;
-  --animate-accordion-up: accordion-up 0.2s ease-out;
-  --animate-float: float 3s ease-in-out infinite;
-  --animate-fade-in: fade-in 0.5s ease-in;
-  --animate-fade-in-up: fade-in-up 0.5s ease-out;
-  --animate-zoom-in: zoom-in 0.3s ease-out;
-  --animate-pulse-glow: pulse-glow 2s ease-in-out infinite;
-  
-  /* Keyframes */
-  @keyframes accordion-down {
-    from { height: 0; }
-    to { height: var(--radix-accordion-content-height); }
-  }
-  
-  @keyframes accordion-up {
-    from { height: var(--radix-accordion-content-height); }
-    to { height: 0; }
-  }
-  
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-  }
-  
-  @keyframes pulse-glow {
-    0%, 100% {
-      opacity: 1;
-      box-shadow: 0 0 20px rgba(45, 122, 58, 0.3);
+  --animate-fade-in: fade-in 0.5s ease-out;
+  --animate-slide-up: slide-up 0.6s ease-out;
+  --animate-scale-in: scale-in 0.3s ease-out;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
     }
-    50% {
-      opacity: 0.8;
-      box-shadow: 0 0 40px rgba(45, 122, 58, 0.6);
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
     }
   }
 }
@@ -100,30 +99,12 @@
 /* Dark Mode */
 @variant dark (&:where(.dark, .dark *));
 
-.dark {
-  --color-background: hsl(210 40% 8%);
-  --color-foreground: hsl(210 40% 98%);
-  --color-card: hsl(210 40% 8%);
-  --color-card-foreground: hsl(210 40% 98%);
-  --color-popover: hsl(210 40% 8%);
-  --color-popover-foreground: hsl(210 40% 98%);
-  --color-secondary: hsl(217.2 32.6% 17.5%);
-  --color-secondary-foreground: hsl(210 40% 98%);
-  --color-muted: hsl(217.2 32.6% 17.5%);
-  --color-muted-foreground: hsl(215 20.2% 65.1%);
-  --color-destructive: hsl(0 62.8% 30.6%);
-  --color-destructive-foreground: hsl(210 40% 98%);
-  --color-border: hsl(217.2 32.6% 17.5%);
-  --color-input: hsl(217.2 32.6% 17.5%);
-  --color-ring: hsl(212.7 26.8% 83.9%);
-}
-
 /* Base Styles */
 @layer base {
   * {
     @apply border-border;
   }
-  
+
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
@@ -136,84 +117,69 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Premium Glassmorphism */
-.glass {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+/* Bolt Button Styles */
+.btn-bolt {
+  @apply inline-flex items-center justify-center px-6 py-3 font-semibold rounded-full transition-all duration-200;
 }
 
-.glass-dark {
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.btn-bolt-primary {
+  @apply bg-bolt-dark text-white hover:bg-gray-800;
 }
 
-/* Premium Gradients */
-.gradient-primary {
-  background: linear-gradient(135deg, #1a3a52 0%, #2d7a3a 100%);
+.btn-bolt-secondary {
+  @apply bg-white text-bolt-dark border border-gray-200 hover:bg-gray-50;
 }
 
-.gradient-accent {
-  background: linear-gradient(135deg, #2d7a3a 0%, #1a3a52 100%);
+.btn-bolt-green {
+  @apply bg-bolt-green text-white hover:bg-bolt-green-dark;
 }
 
-.gradient-text {
-  background: linear-gradient(135deg, #1a3a52 0%, #2d7a3a 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+/* Bolt Card Styles */
+.card-bolt {
+  @apply bg-white rounded-2xl overflow-hidden transition-all duration-300;
 }
 
-/* Premium Shadows */
-.shadow-premium {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+.card-bolt:hover {
+  @apply shadow-xl;
 }
 
-.shadow-premium-lg {
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+/* Bolt Section Styles */
+.section-bolt {
+  @apply py-16 md:py-24;
 }
 
-.shadow-glow {
-  box-shadow: 0 0 20px rgba(45, 122, 58, 0.3);
+.section-bolt-dark {
+  @apply bg-bolt-dark text-white;
 }
 
-.shadow-glow-lg {
-  box-shadow: 0 0 40px rgba(45, 122, 58, 0.4);
+.section-bolt-green {
+  @apply bg-bolt-green text-white;
 }
 
-/* Premium Hover Effects */
-.hover-lift {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.section-bolt-gray {
+  @apply bg-bolt-gray;
 }
 
-.hover-lift:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+/* Bolt Typography */
+.heading-bolt-xl {
+  @apply text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight;
 }
 
-.hover-scale {
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.heading-bolt-lg {
+  @apply text-4xl md:text-5xl font-bold leading-tight;
 }
 
-.hover-scale:hover {
-  transform: scale(1.05);
+.heading-bolt-md {
+  @apply text-3xl md:text-4xl font-bold;
 }
 
-/* Premium Text Effects */
-.text-shadow-premium {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.text-bolt-body {
+  @apply text-lg md:text-xl text-gray-600 leading-relaxed;
 }
 
-.text-shadow-lg {
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Premium Scrollbar */
+/* Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -221,24 +187,16 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #1a3a52 0%, #2d7a3a 100%);
-  border-radius: 5px;
+  background: #34D186;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #2d7a3a 0%, #1a3a52 100%);
+  background: #2BB574;
 }
 
-/* Premium Selection */
+/* Selection */
 ::selection {
-  background-color: rgba(45, 122, 58, 0.3);
-  color: #1a3a52;
-}
-
-/* Premium Focus States */
-.focus-premium:focus {
-  outline: none;
-  ring: 2px;
-  ring-color: rgba(45, 122, 58, 0.5);
-  ring-offset: 2px;
+  background-color: rgba(52, 209, 134, 0.3);
+  color: #1A1A1A;
 }

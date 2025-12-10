@@ -1,0 +1,8 @@
+export { BoltNavbar } from "./BoltNavbar"
+export { BoltHero } from "./BoltHero"
+export { ServicesSection } from "./ServicesSection"
+export { CitiesSection } from "./CitiesSection"
+export { SuperAppSection } from "./SuperAppSection"
+export { EarnSection } from "./EarnSection"
+export { DownloadSection } from "./DownloadSection"
+export { BoltFooter } from "./BoltFooter"
