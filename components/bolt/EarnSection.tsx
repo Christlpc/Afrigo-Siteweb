@@ -73,7 +73,7 @@ export function EarnSection() {
                             <Link href={option.link} className="block group">
                                 <div className="card-afrigo h-full">
                                     {/* Image */}
-                                    <div className="relative h-48 overflow-hidden">
+                                    <div className="relative h-80 overflow-hidden">
                                         <Image
                                             src={option.image}
                                             alt={option.title}
@@ -86,7 +86,7 @@ export function EarnSection() {
                                     </div>
 
                                     {/* Content */}
-                                    <div className="p-6">
+                                    <div className="p-8">
                                         <h3 className="text-lg font-bold text-black mb-2 group-hover:text-afrigo-accent transition-colors">
                                             {option.title}
                                         </h3>
