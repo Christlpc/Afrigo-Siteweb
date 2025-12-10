@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react"
 
 export function CitiesSection() {
     return (
-        <section className="section-afrigo section-afrigo-dark">
+        <section className="section-afrigo bg-black">
             <div className="container mx-auto px-4">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Image */}

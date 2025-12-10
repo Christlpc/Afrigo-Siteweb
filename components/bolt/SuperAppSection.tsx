@@ -26,7 +26,7 @@ export function SuperAppSection() {
                             Première au Congo
                         </span>
 
-                        <h2 className="heading-afrigo-lg text-afrigo-primary mb-6">
+                        <h2 className="heading-afrigo-lg text-black mb-6">
                             Afrigo est la première application VTC au Congo.
                         </h2>
 
@@ -55,7 +55,7 @@ export function SuperAppSection() {
                             ))}
                         </div>
 
-                        <button className="inline-flex items-center gap-2 text-afrigo-primary font-semibold hover:gap-4 transition-all border-b-2 border-afrigo-primary pb-1">
+                        <button className="inline-flex items-center gap-2 text-black font-semibold hover:gap-4 transition-all border-b-2 border-black pb-1">
                             Notre mission
                             <ArrowRight className="w-5 h-5" />
                         </button>

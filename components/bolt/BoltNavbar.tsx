@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
@@ -50,7 +50,7 @@ export function BoltNavbar() {
                         <Button variant="ghost" className="text-gray-700 hover:text-afrigo-accent">
                             Connexion
                         </Button>
-                        <Button className="bg-afrigo-primary hover:bg-afrigo-primary-dark text-white rounded-full">
+                        <Button className="bg-black hover:bg-gray-800 text-white rounded-full">
                             Télécharger l&apos;appli
                         </Button>
                     </div>
@@ -75,7 +75,7 @@ export function BoltNavbar() {
                                     </Link>
                                 ))}
                                 <hr className="my-4" />
-                                <Button className="bg-afrigo-primary hover:bg-afrigo-primary-dark text-white w-full">
+                                <Button className="bg-black hover:bg-gray-800 text-white w-full">
                                     Télécharger l&apos;appli
                                 </Button>
                             </div>

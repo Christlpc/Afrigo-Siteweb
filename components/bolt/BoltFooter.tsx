@@ -48,7 +48,7 @@ const socialLinks = [
 
 export function BoltFooter() {
     return (
-        <footer className="bg-afrigo-dark text-white py-16">
+        <footer className="bg-black text-white py-16">
             <div className="container mx-auto px-4">
                 {/* Top Section */}
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">

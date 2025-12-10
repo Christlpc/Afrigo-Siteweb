@@ -36,7 +36,7 @@ const earnOptions = [
         description: "Développez votre activité de transport avec nos outils de gestion de flotte.",
         image: "/images/afrigo_phone_mockup_1765388380102.png",
         link: "#",
-        color: "bg-afrigo-primary",
+        color: "bg-black",
     },
 ]
 
@@ -51,7 +51,7 @@ export function EarnSection() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="heading-afrigo-lg text-afrigo-primary mb-4">
+                    <h2 className="heading-afrigo-lg text-black mb-4">
                         Générez des revenus avec Afrigo
                     </h2>
                     <p className="text-afrigo-body max-w-2xl mx-auto">
@@ -87,7 +87,7 @@ export function EarnSection() {
 
                                     {/* Content */}
                                     <div className="p-6">
-                                        <h3 className="text-lg font-bold text-afrigo-primary mb-2 group-hover:text-afrigo-accent transition-colors">
+                                        <h3 className="text-lg font-bold text-black mb-2 group-hover:text-afrigo-accent transition-colors">
                                             {option.title}
                                         </h3>
                                         <p className="text-gray-600 text-sm mb-4">

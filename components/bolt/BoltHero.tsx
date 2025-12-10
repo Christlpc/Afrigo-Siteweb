@@ -8,12 +8,12 @@ import Link from "next/link"
 
 export function BoltHero() {
     return (
-        <section className="relative min-h-screen bg-afrigo-primary pt-20 overflow-hidden">
+        <section className="relative min-h-screen bg-black pt-20 overflow-hidden">
             {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-10">
+            <div className="absolute inset-0 opacity-20">
                 <div className="absolute inset-0" style={{
-                    backgroundImage: `radial-gradient(circle at 20% 50%, rgba(255,255,255,0.3) 0%, transparent 50%),
-                           radial-gradient(circle at 80% 20%, rgba(255,255,255,0.2) 0%, transparent 40%)`
+                    backgroundImage: `radial-gradient(circle at 20% 50%, rgba(45,122,58,0.4) 0%, transparent 50%),
+                           radial-gradient(circle at 80% 20%, rgba(45,122,58,0.3) 0%, transparent 40%)`
                 }} />
             </div>
 
@@ -37,7 +37,7 @@ export function BoltHero() {
 
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link href="/chauffeurs">
-                                <Button className="bg-afrigo-accent text-white hover:bg-afrigo-accent-dark rounded-full px-8 py-6 text-lg font-semibold">
+                                <Button className="bg-afrigo-accent text-white hover:bg-afrigo-accent-dark rounded-full px-8 py-6 text-lg font-semibold shadow-lg">
                                     Générez des revenus avec Afrigo
                                     <ArrowRight className="ml-2 h-5 w-5" />
                                 </Button>
